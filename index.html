@@ -1,0 +1,205 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta<! charset="UTF-8">
+    <title>M-Safi Detailing</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #eaeaea;
+        }
+
+        header {
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #062f6e;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        aside {
+            background-color: #d9edf7;
+            padding: 15px;
+            margin: 15px;
+            border-left: 5px solid #0b3d91;
+        }
+
+        section {
+            padding: 20px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #0b3d91;
+        }
+
+        img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        iframe {
+            width: 300px;
+            height: 180px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: #0b3d91;
+            color: white;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #062f6e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* MEDIA QUERY */
+        @media (max-width: 768px) {
+            img, iframe {
+                width: 100%;
+                height: auto;
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>M-SAFI DETAILING</h1>
+    <p>Professional Cleaning & Detailing Services</p>
+</header>
+
+<nav>
+    <a href="#cars">Cars</a>
+    <a href="#planes">Planes</a>
+    <a href="#houses">Houses</a>
+    <a href="#solar">Solar Panels</a>
+    <a href="#sales">Sales</a>
+</nav>
+
+<aside>
+    <h3>Why Choose M-Safi?</h3>
+    <p>We provide expert detailing services using modern equipment and eco-friendly products.</p>
+</aside>
+
+<!-- CARS -->
+<section id="cars">
+    <h2>Car Detailing</h2>
+    <img src="images/detailed-view-car-being-washed-car-wash-concept-car-wash-detailed-cleaning-water-spray-suds-sparkling-finish_918839-146448.avif">
+    <img src="images/black-mercedes-benz-car-is-being-washed-garage_670382-12733.avif">
+
+    <!-- EMBEDDED VIDEOS -->
+     <video controls width="400">
+        <source src="images/download.mp4" type="video/mp4">
+     </video>
+    <table>
+        <tr><th>Service</th><th>Price (KES)</th></tr>
+        <tr><td>Interior Cleaning</td><td>5000</td></tr>
+        <tr><td>Exterior Polish</td><td>7000</td></tr>
+    </table>
+</section>
+
+<!-- PLANES -->
+<section id="planes">
+    <h2>Plane Detailing</h2>
+    <img src="images/gettyimages-1222649620-612x612.jpg">
+<img src="images/2022_01_24_121746_1642980947.jpg"
+ <!-- EMBEDDED VIDEOS -->
+<video controls width="400px">
+    <source src="images/download (1).mp4"type="video/mp4">
+</video>
+    <table>
+        <tr><th>Service</th><th>Price (KES)</th></tr>
+        <tr><td>Cabin Cleaning</td><td>50000</td></tr>
+    </table>
+</section>
+
+<!-- HOUSES -->
+<section id="houses">
+    <h2>House Cleaning</h2>
+    <img src="images/OIP.webp">
+    <img src="images/download.jpg"
+    <!-- EMBEDDED VIDEOS -->
+<video controls width="400px">
+    <source src="images/th.jpgs"type="video/mp4">
+    </video>
+    <table>
+        <tr><th>Service</th><th>Price (KES)</th></tr>
+        <tr><td>Deep Cleaning</td><td>15000</td></tr>
+    </table>
+</section>
+
+<!-- SOLAR -->
+<section id="solar">
+    <h2>Solar Panel Cleaning</h2>
+     <img src="images/download.jpg"
+
+    <iframe src=tps://www.youtube.com/embed/yxq6aKJ9nNc" allowfullscreen></iframe>
+
+    <table>
+        <tr><th>Service</th><th>Price (KES)</th></tr>
+        <tr><td>Panel Washing</td><td>8000</td></tr>
+    </table>
+</section>
+
+<!-- SALES -->
+<section id="sales">
+    <h2>Record a Sale</h2>
+    <form action="save_sale.php" method="POST">
+        <input type="text" name="service" placeholder="Service Name" required>
+        <input type="number" name="amount" placeholder="Amount" required>
+        <button type="submit">Save Sale</button>
+    </form>
+
+    <p><a href="sales.php">View Sales Records</a></p>
+</section>
+
+<footer>
+    <p>Email: m-safi@gmail.com</p>
+    <p>Phone: 0728765431</p>
+</footer>
+
+</body>
+</html>
